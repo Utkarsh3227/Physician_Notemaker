@@ -66,8 +66,7 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
 }
 ```
 
-## License
-This project is licensed under the MIT License.
+
 
 ## Contributing
 Feel free to fork the repo and submit a pull request if you have improvements!
