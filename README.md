@@ -62,8 +62,7 @@ Then access it via `http://<your_local_ip>:8501/` on another device.
 ├── task1.py                # Streamlit app with model path requirement
 ├── task2.py                # Streamlit app without model path requirement
 ├── task3.py                # Streamlit app with model path requirement
-├── README.md               # Documentation
-└── requirements.txt        # List of dependencies
+└── README.md               # Documentation
 ```
 
 ## Example Outputs
