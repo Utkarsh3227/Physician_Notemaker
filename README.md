@@ -22,7 +22,7 @@ pip install streamlit ctransformers torch
 
 ### Download the Model
 The Llama 2 model file (`llama-2-7b-chat.Q6_K.gguf`) can be downloaded from **Google Drive**:
-[Download Here]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/1NbIqcK00t6wrVCiV_J4SFi6_Uj2w7Hf6/view?usp=drive_link))
+[Download Here](https://drive.google.com/file/d/1NbIqcK00t6wrVCiV_J4SFi6_Uj2w7Hf6/view?usp=drive_link)
 
 Place the downloaded model file in the appropriate directory, as specified in the script.
 
