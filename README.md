@@ -17,7 +17,7 @@ Ensure you have the following installed:
 
 ### Install Dependencies
 ```bash
-pip install streamlit ctransformers torch
+pip install streamlit ctransformers torch langchain_community transformers
 ```
 
 ### Download the Model
