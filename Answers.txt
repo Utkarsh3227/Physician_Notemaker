@@ -1,3 +1,5 @@
+## Task 1
+
 * The approach handles ambiguous or missing medical data by using default fallback values like "Unknown" or "Not provided" when certain details are not clear in the transcript. It also validates the extracted data with a retry mechanism (up to 10 attempts) to ensure the output matches the expected format, and merges similar terms to reduce redundancy and ambiguity. This way, even if some parts of the conversation are incomplete or unclear, the system still produces a coherent summary.
 * For medical summarization, a pre-trained Medical NER model such as "blaze999/Medical-NER" is used to extract key information like symptoms, diagnosis, and treatments directly from the conversation. This data is then refined and structured into a clear medical report using a LLaMA-based language generation model. Fine-tuning LLaMA on medical-specific datasets can further improve its accuracy and reliability, making it even more effective at handling medical language and nuances.
 
@@ -5,4 +7,7 @@
 ## Task2
 
 To fine-tune BERT for medical sentiment detection, you add a classification layer on top of the pre-trained model and train it on annotated clinical texts using techniques like tokenization and cross-entropy loss. This helps the model learn to distinguish sentiments such as "Anxious," "Neutral," or "Reassured."
+
+## Task3
+
 
