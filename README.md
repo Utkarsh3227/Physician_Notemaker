@@ -4,6 +4,7 @@ This project is a **Medical Conversation to JSON Converter** built using **Strea
 
 ## Features
 - Uses **Llama 2** for text generation
+- Utilizes **blaze999/Medical-NER** for medical Named Entity Recognition (NER)
 - Extracts patient information, symptoms, diagnosis, treatment, and prognosis
 - Outputs the results in **structured JSON format**
 - Simple UI built with **Streamlit**
@@ -56,8 +57,9 @@ streamlit run task2.py
 └── requirements.txt        # List of dependencies
 ```
 
-## Example Output
-### Input (Conversation)
+## Example Outputs
+### Task 1
+#### Sample Input
 ```
 Doctor: How are you feeling today?
 Patient: I had a car accident. My neck and back hurt a lot for four weeks.
@@ -65,21 +67,41 @@ Doctor: Did you receive treatment?
 Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional back pain.
 ```
 
-### Output (JSON)
-```json
-{
-  "Patient_Name": "Janet Jones",
-  "Symptoms": ["Neck pain", "Back pain", "Head impact"],
-  "Diagnosis": "Whiplash injury",
-  "Treatment": ["10 physiotherapy sessions", "Painkillers"],
-  "Current_Status": "Occasional backache",
-  "Prognosis": "Full recovery expected within six months"
-}
+
+#### Screenshot
+![Task 1 Screenshot](images/task1_output.png)
+
+---
+
+### Task 2
+#### Sample Input
 ```
+"I'm a bit worried about my back pain, but I hope it gets better soon."
+```
+
+
+
+#### Screenshot
+![Task 2 Screenshot](images/task2_output.png)
+
+---
+
+### Task 3
+#### Sample Input
+```
+Doctor: How are you feeling today?
+Patient: I had a car accident. My neck and back hurt a lot for four weeks.
+Doctor: Did you receive treatment?
+Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional back pain.
+```
+
+
+
+#### Screenshot
+![Task 3 Screenshot](images/task3_output.png)
 
 ## Contributing
 Feel free to fork the repo and submit a pull request if you have improvements!
 
 ## Contact
 For any issues or suggestions, please open an **issue** in the repository.
-
