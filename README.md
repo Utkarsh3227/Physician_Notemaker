@@ -30,10 +30,10 @@ Place the downloaded model file in the appropriate directory, as specified in th
 ### Run the App
 For `task1.py` and `task3.py`, run the following command:
 ```bash
-streamlit run task1.py -- --model_path /home/dse/Desktop/CD/llama-2-7b-chat.Q6_K.gguf
+streamlit run task1.py -- --model_path /path_to_model
 ```
 ```bash
-streamlit run task3.py -- --model_path /home/dse/Desktop/CD/llama-2-7b-chat.Q6_K.gguf
+streamlit run task3.py -- --model_path /path_to_model
 ```
 
 For `task2.py`, run:
