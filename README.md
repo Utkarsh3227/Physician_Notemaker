@@ -69,7 +69,7 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
 
 
 #### Screenshot
-![Task 1 Screenshot](images/task1_output.png)
+![Task 1 Screenshot](images/task1_ner.png)
 
 ---
 
@@ -82,7 +82,7 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
 
 
 #### Screenshot
-![Task 2 Screenshot](images/task2_output.png)
+![Task 2 Screenshot](images/task2_response_analysis.png)
 
 ---
 
@@ -98,7 +98,7 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
 
 
 #### Screenshot
-![Task 3 Screenshot](images/task3_output.png)
+![Task 3 Screenshot](images/task3_soap.png)
 
 ## Contributing
 Feel free to fork the repo and submit a pull request if you have improvements!
