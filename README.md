@@ -1,11 +1,11 @@
-# SOAP Note Generator
+# Medical Conversation to JSON Converter
 
-This project is a **SOAP Note Generator** built using **Streamlit** and **Llama 2** (via `ctransformers`). It converts doctor-patient conversations into structured **SOAP (Subjective, Objective, Assessment, Plan) notes**.
+This project is a **Medical Conversation to JSON Converter** built using **Streamlit** and **Llama 2** (via `ctransformers`). It extracts key medical details from doctor-patient conversations and structures them into a **JSON format**.
 
 ## Features
 - Uses **Llama 2** for text generation
-- Converts medical conversations into structured SOAP notes
-- Outputs the results in **JSON format**
+- Extracts patient information, symptoms, diagnosis, treatment, and prognosis
+- Outputs the results in **structured JSON format**
 - Simple UI built with **Streamlit**
 - Supports GPU acceleration for faster inference
 
@@ -22,7 +22,7 @@ pip install streamlit ctransformers torch
 
 ### Download the Model
 The Llama 2 model file (`llama-2-7b-chat.Q6_K.gguf`) can be downloaded from **Google Drive**:
-[Download Here](YOUR_GOOGLE_DRIVE_LINK)
+[Download Here]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/1NbIqcK00t6wrVCiV_J4SFi6_Uj2w7Hf6/view?usp=drive_link))
 
 Place the downloaded model file in the appropriate directory, as specified in the script.
 
@@ -33,13 +33,13 @@ streamlit run app.py
 ```
 
 ### How It Works
-1. Enter a conversation between a **doctor and a patient** in the text box.
-2. Click **Generate SOAP Note**.
-3. The structured **SOAP note** will be displayed in JSON format.
+1. Enter a **doctor-patient conversation** in the text box.
+2. Click **Generate JSON Output**.
+3. The structured **medical details** will be displayed in JSON format.
 
 ## Project Structure
 ```
-📂 SOAP-Note-Generator
+📂 Medical-Conversation-JSON
 ├── app.py                # Main Streamlit app
 ├── README.md             # Documentation
 └── requirements.txt      # List of dependencies
@@ -48,31 +48,21 @@ streamlit run app.py
 ## Example Output
 ### Input (Conversation)
 ```
-Doctor: What brings you in today?
-Patient: I've had a persistent cough for the past week.
-Doctor: Any fever or shortness of breath?
-Patient: No fever, but I feel a little tired.
+Doctor: How are you feeling today?
+Patient: I had a car accident. My neck and back hurt a lot for four weeks.
+Doctor: Did you receive treatment?
+Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional back pain.
 ```
 
 ### Output (JSON)
 ```json
 {
-  "Subjective": {
-    "Chief_Complaint": "Persistent cough for the past week",
-    "History_of_Present_Illness": "No fever, mild fatigue."
-  },
-  "Objective": {
-    "Physical_Exam": "Not provided",
-    "Observations": "Not provided"
-  },
-  "Assessment": {
-    "Diagnosis": "Possible viral infection",
-    "Severity": "Mild"
-  },
-  "Plan": {
-    "Treatment": "Rest, fluids, over-the-counter cough syrup",
-    "Follow-Up": "Return if symptoms worsen"
-  }
+  "Patient_Name": "Janet Jones",
+  "Symptoms": ["Neck pain", "Back pain", "Head impact"],
+  "Diagnosis": "Whiplash injury",
+  "Treatment": ["10 physiotherapy sessions", "Painkillers"],
+  "Current_Status": "Occasional backache",
+  "Prognosis": "Full recovery expected within six months"
 }
 ```
 
