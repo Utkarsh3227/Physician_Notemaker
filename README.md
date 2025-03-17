@@ -17,7 +17,7 @@ Ensure you have the following installed:
 
 ### Install Dependencies
 ```bash
-pip install streamlit ctransformers torch langchain_community transformers
+pip install streamlit ctransformers torch transformers langchain_community
 ```
 
 ### Download the Model
@@ -28,8 +28,17 @@ Place the downloaded model file in the appropriate directory, as specified in th
 
 ## Usage
 ### Run the App
+For `task1.py` and `task3.py`, run the following command:
 ```bash
-streamlit run app.py
+streamlit run task1.py -- --model_path /home/dse/Desktop/CD/llama-2-7b-chat.Q6_K.gguf
+```
+```bash
+streamlit run task3.py -- --model_path /home/dse/Desktop/CD/llama-2-7b-chat.Q6_K.gguf
+```
+
+For `task2.py`, run:
+```bash
+streamlit run task2.py
 ```
 
 ### How It Works
@@ -40,9 +49,11 @@ streamlit run app.py
 ## Project Structure
 ```
 📂 Medical-Conversation-JSON
-├── app.py                # Main Streamlit app
-├── README.md             # Documentation
-└── requirements.txt      # List of dependencies
+├── task1.py                # Streamlit app with model path requirement
+├── task2.py                # Streamlit app without model path requirement
+├── task3.py                # Streamlit app with model path requirement
+├── README.md               # Documentation
+└── requirements.txt        # List of dependencies
 ```
 
 ## Example Output
@@ -65,8 +76,6 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
   "Prognosis": "Full recovery expected within six months"
 }
 ```
-
-
 
 ## Contributing
 Feel free to fork the repo and submit a pull request if you have improvements!
