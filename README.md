@@ -47,6 +47,15 @@ streamlit run task2.py
 2. Click **Generate JSON Output**.
 3. The structured **medical details** will be displayed in JSON format.
 
+### Generating and Loading the App
+Since this project runs using **Streamlit**, the application will generate a **local URL** once launched. Open the URL displayed in the terminal (usually `http://localhost:8501/`) in your web browser to interact with the app.
+
+If accessing from another device in the local network, find your local IP address and run:
+```bash
+streamlit run task1.py --server.address 0.0.0.0
+```
+Then access it via `http://<your_local_ip>:8501/` on another device.
+
 ## Project Structure
 ```
 📂 Medical-Conversation-JSON
@@ -67,7 +76,6 @@ Doctor: Did you receive treatment?
 Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional back pain.
 ```
 
-
 #### Screenshot
 ![Task 1 Screenshot](images/task1_ner.png)
 
@@ -78,8 +86,6 @@ Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional b
 ```
 "I'm a bit worried about my back pain, but I hope it gets better soon."
 ```
-
-
 
 #### Screenshot
 ![Task 2 Screenshot](images/task2_response_analysis.png)
@@ -94,8 +100,6 @@ Patient: I had a car accident. My neck and back hurt a lot for four weeks.
 Doctor: Did you receive treatment?
 Patient: Yes, I had ten physiotherapy sessions, and now I only have occasional back pain.
 ```
-
-
 
 #### Screenshot
 ![Task 3 Screenshot](images/task3_soap.png)
